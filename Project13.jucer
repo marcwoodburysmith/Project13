@@ -4,6 +4,9 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" cppLanguageStandard="20">
   <MAINGROUP id="tlbN1N" name="Project13">
     <GROUP id="{59E6AA20-276D-3F68-E7D2-6757843348AF}" name="Source">
+      <GROUP id="{100B64B0-E1B4-C268-082F-1FE313EDCD06}" name="DSP">
+        <FILE id="SueOob" name="Fifo.h" compile="0" resource="0" file="SimpleMultiBandComp/Source/DSP/Fifo.h"/>
+      </GROUP>
       <FILE id="Nm9Pxy" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="Jlu9qA" name="PluginProcessor.h" compile="0" resource="0"
