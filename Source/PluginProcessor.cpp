@@ -28,6 +28,13 @@ Project13AudioProcessor::~Project13AudioProcessor()
 {
 }
 
+juce::AudioProcessorValueTreeState::ParameterLayout Project13AudioProcessor::createParameterLayout()
+{
+    juce::AudioProcessorValueTreeState::ParameterLayout layout;
+    
+    return layout;
+}
+
 //==============================================================================
 const juce::String Project13AudioProcessor::getName() const
 {

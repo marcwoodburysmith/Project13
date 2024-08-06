@@ -11,6 +11,22 @@
 #include <JuceHeader.h>
 #include "../SimpleMultiBandComp/Source/DSP/Fifo.h"
 
+//TODO: add APVTS
+//TODO: create audio parameters for all dsp choices
+//TODO: update DSP here from audio parameters
+//TODO: save/load settings
+//TODO: save/load DSP order
+//TODO: Drag-To-Reorder GUI
+//TODO: GUI design for each DSP instance?
+//TODO: metering
+//TODO: prepare all DSP
+//TODO: wet/dry knob [BONUS]
+//TODO: mono & stereo versions [mono is BONUS]
+//TODO: modulators [BONUS]
+//TODO: thread-safe filter updating [BONUS]
+//TODO: pre/post filtering [BONUS]
+//TODO: delay module [BONUS]
+
 
 //==============================================================================
 /**
@@ -72,6 +88,9 @@ public:
     using DSP_Pointers = std::array<juce::dsp::ProcessorBase*, static_cast<size_t>(DSP_Option::END_OF_LIST)>;
     
     SimpleMBComp::Fifo<DSP_Order> dspOrderFifo;
+    
+    static juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+    juce::AudioProcessorValueTreeState apvts {*this, nullptr, "Settings", createParameterLayout()};
 
 private:
     
