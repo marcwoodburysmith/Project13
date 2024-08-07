@@ -103,6 +103,13 @@ public:
     juce::AudioParameterFloat* chorusCenterDelayMs = nullptr;
     juce::AudioParameterFloat* chorusFeedbackPercent = nullptr;
     juce::AudioParameterFloat* chorusMixPercent = nullptr;
+    
+    juce::AudioParameterFloat* overdriveSaturation = nullptr;
+    
+    juce::AudioParameterChoice* ladderFilterMode = nullptr;
+    juce::AudioParameterFloat* ladderFilterCutoffHz = nullptr;
+    juce::AudioParameterFloat* ladderFilterResonance = nullptr;
+    juce::AudioParameterFloat* ladderFilterDrive = nullptr;
 
 private:
     
